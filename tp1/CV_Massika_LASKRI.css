@@ -1,5 +1,14 @@
+img{
+    width: 140px;
+    height: 150px;
+    max-width: 70%;
+    margin-left: 650px;
+    
+}
+   
 h3{
-    COLOR:blue;
+    
+    COLOR:rgb(9, 9, 243);
     text-align: center;
 }
 h1{
@@ -8,9 +17,15 @@ h1{
     text-align: center;
 }
 h4{
-    color:red;
+    color: greenyellow;
 }
 h5{
-    color:red;
+    color:hotpink;
     
 }
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
