@@ -17,10 +17,12 @@ body{
 background-color: pink;
 padding: 5px;
 border: 1px black;
+display:none;
 }    
 
 #result{
 background-color: green;
 padding: 5px;
 text-decoration-style: white;
+display:none;
 }
