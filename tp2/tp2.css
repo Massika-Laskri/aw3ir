@@ -1,0 +1,26 @@
+body{
+    
+    background-color: #ccb0b0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: 16px;
+       margin: 0 auto;
+       max-width: 800px;             
+   }
+   h1{
+       color: rebeccapurple;
+       text-align: center;
+       font-size: 50px;
+       font-weight: 40px;
+        
+} 
+#error{
+background-color: pink;
+padding: 5px;
+border: 1px black;
+}    
+
+#result{
+background-color: green;
+padding: 5px;
+text-decoration-style: white;
+}
