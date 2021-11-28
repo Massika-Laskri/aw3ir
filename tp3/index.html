@@ -3,31 +3,128 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
+        <title> TP3 </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/form-validation.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
 
         <style>
-          body{
-              background-color: #e9ebee;              
+          body{          
+            background-image: url("photo.jpg"); 
+            background-repeat: no-repeat;
+            height: max-content;
+            width: max-content;
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
               font-size: 16px;
               margin: 0 auto;
-              max-width: 800px;              
+              max-width: 800px;                 
           }
         </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+     </head>
+
+
+    <body>    
+      <h1 style=" text-align:center; color: black;"> TP3 </h1>
+      <div class="container"> 
+            <div class="mt-4 p-2  text-white rounded"
+                <div class="container mt-8">
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align:center; color: rgb(78, 78, 245);"> Formulaire avec bootstrap </h1>
+                            
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputfirstname" class="form-label">First name</label>
+                  <input type="First name" class="form-control" id="inputfirstname" minlength="5">
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputfamilyname" class="form-label">Family name</label>
+                  <input type="Family name" class="form-control" id="inputfamilyname" minlength="5">
+                </div>
+              
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputdateofbirth" class="form-label">Date of birth</label>
+                  <input type="Date of birth" class="form-control" id="inputdateofbirth" placeholder="dd/mm/yyyy"   max= Date.now() >
+                </div>
+
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <div> <br>
+                  <button type="submit" class="btn btn-primary">Sign in </button>
+                  </div>
+                    </label>
+                  </div>
+                </div>
+              </form>
+                <div class="error" id = "error"> </div>
+                <div class="result" id="result"> </div>
+              
+          </div>
+
+          <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><div class="error" id="title"></div></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <h4 class="modal-title" id="exampleModalLabe">erreur</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabe">erreur</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body"> Veuillez rentrer tous les champs </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+                <div class="modal-body">
+                <p> <a href=https://www.google.com/maps/place/Tour+Eiffel/@48.8583701,2.2944813,15z/data=!4m5!3m4!1s0x0:0x8ddca9ee380ef7e0!8m2!3d48.8583701!4d2.2944813/">
+                  lien map vers la tour eiffel </a></p>;
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                   
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
     </body>
 </html>
