@@ -30,9 +30,8 @@
       <h1 style=" text-align:center; color: black;"> TP3 </h1>
       <div class="container"> 
             <div class="mt-4 p-2  text-white rounded"
-                <div class="container mt-8">
-                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align:center; color: rgb(78, 78, 245);"> Formulaire avec bootstrap </h1>
-                </div>          
+               class="container mt-8">
+                    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align:center; color: rgb(78, 78, 245);"> Formulaire avec bootstrap </h1>          
             <form class="row g-3">
                 <div class="col-md-6">
                   <label for="inputfirstname" class="form-label">First name</label>
@@ -81,6 +80,7 @@
                   </div>
                 </div>
               </form>
+
                 <div class="error" id = "error"> </div>
                 <div class="result" id="result"> </div>
               
@@ -88,32 +88,21 @@
 
           <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel"><div class="error" id="title"></div></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabe">erreur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"> Veuillez rentrer tous les champs </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
                 </div>
-                <h4 class="modal-title" id="exampleModalLabe">erreur</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+            </div>
+        </div>
 
-                <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabe">erreur</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body"> Veuillez rentrer tous les champs </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-              <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                
+              <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -123,15 +112,12 @@
                 <p> <a href=https://www.google.com/maps/place/Tour+Eiffel/@48.8583701,2.2944813,15z/data=!4m5!3m4!1s0x0:0x8ddca9ee380ef7e0!8m2!3d48.8583701!4d2.2944813/">
                   lien map vers la tour eiffel </a></p>;
                 </div>
-
                 <div class="modal-footer">
                   <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-                   
-                  
                 </div>
               </div>
             </div>
           </div>
-        </div> 
+
     </body>
 </html>
