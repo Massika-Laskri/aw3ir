@@ -34,6 +34,7 @@ function show_data(){
   }
 }
 
+
 function addcontact(){
   var name = document.getElementById('nom').value;
   var first_name = document.getElementById('prenom').value;
